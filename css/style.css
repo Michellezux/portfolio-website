@@ -66,12 +66,6 @@ a {
   text-decoration: none; /* No underlining */
 }
 
-a:visited{ /* visited link */
-  color: #737373;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-decoration: none;
-}
 
 a:hover,
 a:focus {

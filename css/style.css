@@ -8,7 +8,13 @@ Link color:(Green): #308391
 button color:(Green):#00473d
 Base Black (Black): #000000;
 Base white (White): #FAFAFA
+font-family: 'Lato', sans-serif;
+font-family: 'Nunito', sans-serif;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #FAFAFA;
   font-family: 'Lato', sans-serif;
@@ -19,14 +25,55 @@ body {
   line-height: 1.8em;
   /* Sets the line-height to 1.8 * the font -size */
   color: #737373;
+  margin: auto;
+  padding-bottom: 0px;
 }
 
 header {
-  background-color: #FAFAFA;
+  background-color: #F2F8F8;
+  text-align: center;
+  padding: 10px 0 4px;
+  margin: :0 auto;
+  width: 100%;
+  position: fixed;
+  display: inline-block;
+  border-bottom: 3px solid: #525252;
   font-weight: 400;
   style: Normal;
-  font-size: 12px;
+  font-size: 14px;
   color: #525252;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(37, 41, 48, 0.75);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(37, 41, 48, 0.75);
+  box-shadow: 0px 2px 8px 0px rgba(37, 41, 48, 0.75);
+}
+
+.menu_link {
+  padding: 0 20px;
+}
+
+main {
+  padding-top: 180px;
+}
+
+nav {
+  display: inline-block;
+  width: 100% postion: relative;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15 px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #737373
 }
 
 h1, h2, h3, h4 {
@@ -56,6 +103,7 @@ h4 {
 
 img {
   width: 100%
+  height:auto;
 }
 
 a {
@@ -63,19 +111,21 @@ a {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.08em;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
-
 
 a:hover,
 a:focus {
   color: #525252;
   text-transform: uppercase;
   font-weight: 400;
-  text-decoration: none; /* No Underlining */
+  text-decoration: none;
+  /* No Underlining */
 }
 
-a:active{/* selected link */
+a:active {
+  /* selected link */
   color: #A8A8A8;
   text-transform: uppercase;
   font-weight: 400;
@@ -102,4 +152,54 @@ a:active{/* selected link */
 
 .button: active {
   color: 737373;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.project {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+  position: relative;
+}
+
+#contact p {
+  padding-bottom: 16px;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid ##00473d;
+}
+
+#hero {
+  background-color: #FAFAFA;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background-color: #F2F8F8;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  margin: 0 auto;
+  width: 100%
 }

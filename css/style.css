@@ -103,7 +103,7 @@ h4 {
 }
 
 img {
-  width: 100%
+  width: 100% semi colon;
   height:auto;
 }
 
@@ -165,6 +165,10 @@ a:active {
 
 .row {
   margin: 25px 0;
+}
+
+.row h3 {
+  color: #525252;
 }
 
 .center {

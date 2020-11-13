@@ -30,20 +30,23 @@
 <body>
   <!-- START HEADER SECTION -->
   <header id="navbar">
-    <!-- open header section for logo and menu -->
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <!-- open inner container -->
-        <img src="img/logo/logo.svg" alt="Michelle Zou" class="logo"><!-- logo placeholder image -->
-        <nav>
-          <!-- open navigation section -->
-          <ul class="navigation-links">
-            <li><a class="menu_link" href="index.html">Work</a></li><!-- menu link -->
-            <li><a class="menu_link" href="about.html">About</a></li><!-- menu link -->
-            <li><a class="menu_link" href="#footer">Contact</a></li><!-- menu link -->
-          </ul>
-        </nav><!-- end navigation -->
-      </div><!-- end inner container -->
+    <div class="text-align: unset">
+      <!-- open header section for logo and menu -->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <!-- open inner container -->
+
+          <img src="img/logo/logo.svg" alt="Michelle Zou" class="logo"><!-- logo placeholder image -->
+
+          <nav>
+            <!-- open navigation section -->
+            <ul class="navigation-links">
+              <li><a class="menu_link" href="index.html">Work</a></li><!-- menu link -->
+              <li><a class="menu_link" href="about.html">About</a></li><!-- menu link -->
+              <li><a class="menu_link" href="#footer">Contact</a></li><!-- menu link -->
+            </ul>
+          </nav><!-- end navigation -->
+        </div><!-- end inner container -->
   </header><!-- end header -->
   <!-- END OF HEADER -->
 
@@ -53,6 +56,7 @@
     <style>
       main {
         padding-top: 180px;
+        text-align: center;
       }
     </style>
     <div id="hero">
@@ -66,20 +70,19 @@
     <!--START WORK SECTION -->
     <div id="Work">
       <div class="container">
-        <h2>My Work</h2>
+        <h2>PROJECTS</h2>
         <div class="row">
-
           <!--open row that holds(2)columns for project -->
-          <div id="project">
+          <div class="col-md-6 col-lg-7">
             <!-- open first column (used for image) -->
             <picture>
               <source srcset="img/expertise/expertise@1.jpg" media="(max-width:767px)">
               <img src="img/expertise/expertise@2.jpg" alt="expertisemockup">
             </picture>
-          </div><!-- end first column -->
-
-          <div>
-            <!-- open second column(used for text) -->
+          </div>
+          <!-- end first column -->
+          <!-- open second column(used for text) -->
+          <div class="col-md-6 col-lg-5">
             <h3> Expertise </h3>
             <!--heading for the project -->
             <p>
@@ -87,28 +90,34 @@
               Expertise is a mobile app that helps anyone, anywhere to instantly contact with certified experts in virtually any field.
             </p><!-- end paragraph -->
             <a href="expertise.html" class="button">View Project</a><!-- button or <link label -->
-          </div><!-- end second column -->
-        </div><!-- end row that holds(2)columns for project -->
-        <div class="row">
-          <!-- open row that hold(2)columns for project -->
-          <div id="project">
-            <div class="container" <!-- open first column (used for image) -->
+          </div>
+          <!-- end second column -->
+        </div>
+        <!-- end row that holds(2)columns for project -->
+
+        <!-- open row that hold(2)columns for project -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-7">
+              <!-- open first column (used for image) -->
               <picture>
                 <source srcset="img/talkingparrot/talkingparrot@1.jpg" media="(max-width:767px)">
                 <img src="img/talkingparrot/talkingparrot@2.jpg" alt="My Image">
               </picture>
-            </div><!-- end first column -->
-          </div>
-          <div>
-            <!-- open second column(used for text) -->
-            <h3> Talking Parrot</h3><!-- heading for the project -->
-            <p>
-              <!-- open paragraph -->
-              Talking Parrot is a vocabulary learning app, and focused on learning new vocabulary.
-            </p><!-- end paragraph -->
-            <a href="talking parrot.html" class="button">View Project</a><!-- button or link label -->
-          </div><!-- end second column -->
-        </div><!-- end row that holds(2)columns for project -->
+            </div>
+            <!-- end first column -->
+            <div>
+              <!-- open second column(used for text) -->
+              <div class="col-md-6 col-lg-5">
+                <h3> Talking Parrot</h3>
+                <!-- heading for the project -->
+                <p>
+                  <!-- open paragraph -->
+                  Talking Parrot is a vocabulary learning app, and focused on learning new vocabulary.
+                </p><!-- end paragraph -->
+                <a href="talking parrot.html" class="button">View Project</a><!-- button or link label -->
+              </div><!-- end second column -->
+            </div><!-- end row that holds(2)columns for project -->
   </main>
   <!--end main content <area -->
   <!-- END MAIN CONTENT SECTION -->

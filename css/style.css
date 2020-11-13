@@ -32,8 +32,7 @@ body {
 
 header {
   background-color: #F2F8F8;
-  text-align: center;
-  padding: 10px 0 4px;
+  padding: 20px 0 13px;
   margin: :0 auto;
   width: 100%;
   position: fixed;
@@ -58,7 +57,8 @@ main {
 
 nav {
   display: inline-block;
-  width: 100% postion: relative;
+  width: 100%;
+  postion: relative;
 }
 
 nav>ul {
@@ -104,7 +104,7 @@ h4 {
 
 img {
   width: 100% semi colon;
-  height:auto;
+  height: auto;
 }
 
 a {
@@ -156,15 +156,17 @@ a:active {
 }
 
 .container {
-  max-width: 1200px;
-}
-
-.container {
   padding: 0 15px;
 }
 
 .row {
   margin: 25px 0;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .row h3 {
@@ -195,9 +197,25 @@ a:active {
 
 #hero {
   background-color: #FAFAFA;
+  text-align: center;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+#about {
+  text-align: center;
+}
+
+#about-page h3 {margin-top: : 0;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
 
 footer {
@@ -207,4 +225,122 @@ footer {
   position: relative;
   margin: 0 auto;
   width: 100%
+}
+
+@@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+
+/* ================================
+medium devices (640px and larger)
+================================== */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px
+  }
+
+  .logo {
+    width:auto;
+    float: left;
+    margin-top: 40px;
+  }
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#hero {
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-md-6 {
+  width: 50%
+}
+
+.col-md-4 {
+  width: 33.33%
+}
+
+.col-md-4 h3 {
+  text-align: left;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: : 0 15px;
+}
+
+/* ===============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px){
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class*="col-lg-"] {
+    float: left;
+  }
+
+  .col-lg-5 {
+    width: 41.66%
+  }
+
+  .col-lg-7 {
+    width: 58.33%
+  }
+}
+
+/* ================================
+X-large devices (1440px or larger)
+=================================== */
+@media only screen and (min-width: 1440px) {
+
 }

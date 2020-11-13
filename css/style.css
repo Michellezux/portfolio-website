@@ -103,7 +103,7 @@ h4 {
 }
 
 img {
-  width: 100% semi colon;
+  width: 100%;
   height: auto;
 }
 
@@ -139,16 +139,16 @@ a:active {
   color: #FFFFFF;
   /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  boarder-bottom: 2px solid #A8A8A8;
+  border-bottom: 2px solid #A8A8A8;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button: hover {
   opacity: 0.8;
-  text-decoration: none;
 }
 
 .button: active {
@@ -186,6 +186,68 @@ a:active {
   position: relative;
 }
 
+.svg {
+  width 100%, max-width: 100%, height: auto
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation-duration: 34s;
+  animation-name: cloud-move-reverse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@@keyframes cloud-move {
+  from {
+    transform: translate(0,50px);
+  }
+
+  to {
+    transform: translate(200px,50px);
+  }
+}
+
+@@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px,48px);
+  }
+
+  to {
+    transform: translate(100px,48px);
+  }
+}
+
 #contact p {
   padding-bottom: 16px;
 }
@@ -211,7 +273,9 @@ a:active {
   text-align: center;
 }
 
-#about-page h3 {margin-top: : 0;}
+#about-page h3 {
+  margin-top: : 0;
+}
 
 [class*="col-"] {
   float: left;
@@ -226,13 +290,6 @@ footer {
   margin: 0 auto;
   width: 100%
 }
-
-@@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
 
 /* ================================
 medium devices (640px and larger)
@@ -250,97 +307,95 @@ medium devices (640px and larger)
   }
 
   .logo {
-    width:auto;
+    width: auto;
     float: left;
     margin-top: 40px;
   }
 
-.container {
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-#hero {
-  text-align: center;
-}
-
-#hero span {
-  display: block;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-.col-md-6 {
-  width: 50%
-}
-
-.col-md-4 {
-  width: 33.33%
-}
-
-.col-md-4 h3 {
-  text-align: left;
-}
-
-nav > ul {
-  margin: 1em 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: : 0 15px;
-}
-
-/* ===============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px){
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
   .container {
-    max-width: 1200px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
 
-  [class*="col-lg-"] {
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  [class*="col-"] {
     float: left;
+    padding: 10px;
   }
 
-  .col-lg-5 {
-    width: 41.66%
+  .col-md-6 {
+    width: 50%
   }
 
-  .col-lg-7 {
-    width: 58.33%
+  .col-md-4 {
+    width: 33.33%
   }
-}
 
-/* ================================
+  .col-md-4 h3 {
+    text-align: left;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul>li>a {
+    padding: : 0 15px;
+  }
+
+  /* ===============================
+Large devices (1024px or larger)
+================================= */
+  @media only screen and (min-width: 1024px) {
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    [class*="col-lg-"] {
+      float: left;
+    }
+
+    .col-lg-5 {
+      width: 41.66%
+    }
+
+    .col-lg-7 {
+      width: 58.33%
+    }
+  }
+
+  /* ================================
 X-large devices (1440px or larger)
 =================================== */
-@media only screen and (min-width: 1440px) {
-
-}
+  @media only screen and (min-width: 1440px) {}

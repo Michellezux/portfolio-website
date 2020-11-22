@@ -177,7 +177,7 @@ nav>ul {
   margin: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
@@ -221,7 +221,7 @@ nav>ul>li>a {
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
 @keyframes color-change {
@@ -244,10 +244,11 @@ nav>ul>li>a {
 
 @keyframes cloud-move {
   from {
-    transform: translate(0,50px);
+    transform: translate(0, 50px);
   }
+
   to {
-    transform: translate(200px,50px);
+    transform: translate(200px, 50px);
   }
 }
 
@@ -257,8 +258,9 @@ nav>ul>li>a {
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px,48px);
+    transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
